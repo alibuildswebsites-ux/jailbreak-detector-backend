@@ -1,0 +1,3 @@
+method,coefficient,p_value,n,df,alpha,null_hypothesis,alternative_hypothesis,decision,interpretation
+Pearson,0.9924027412459386,0.0,1031,1029.0,0.05,ρ = 0,ρ ≠ 0,Reject H0,Tests linear association between word count and character count.
+Spearman,0.9964799471153358,0.0,1031,,0.05,ρ_s = 0,ρ_s ≠ 0,Reject H0,Tests monotonic association using ranks; useful because prompt lengths are strongly non-normal.

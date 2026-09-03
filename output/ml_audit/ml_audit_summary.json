@@ -1,0 +1,17 @@
+{
+  "train_rows": 1031,
+  "test_rows": 262,
+  "train_class_counts": {
+    "benign": 516,
+    "jailbreak": 515
+  },
+  "train_class_proportions": {
+    "benign": 0.5004849660523764,
+    "jailbreak": 0.49951503394762364
+  },
+  "random_state": 42,
+  "cv": "StratifiedKFold(n_splits=5, shuffle=True, random_state=42)",
+  "test_set_used_in_cv": false,
+  "demographic_fairness_analysis_possible": false,
+  "reason": "No demographic/subgroup attributes are present in the dataset schema."
+}

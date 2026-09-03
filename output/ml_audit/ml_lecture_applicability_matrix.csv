@@ -1,0 +1,17 @@
+lecture_requirement,status,evidence
+Problem identification,Implemented,Binary jailbreak vs benign classification.
+Data/features/model/evaluation elements,Implemented,Prompt text -> TF-IDF features -> classifiers -> held-out metrics.
+Training/test split,Implemented,Official supplied split preserved; test set held out.
+Validation set,Not required for current untuned baseline,No hyperparameter tuning/model selection on the test set; 5-fold CV on training data provides validation evidence.
+Stratified K-Fold cross-validation,Implemented,5-fold stratified CV on training data only; TF-IDF is fit within each fold.
+Supervised learning,Implemented,Both train and test have known binary labels.
+Classification metrics,Implemented,"Accuracy, macro precision/recall/F1 and jailbreak precision/recall/F1."
+Confusion matrix,Implemented,One matrix per classifier.
+Metric choice,Implemented/documented,Jailbreak recall and F1 emphasized because missed attacks are more safety-critical.
+Bias assessment,Implemented,Dataset/model bias risks documented; unsupported subgroup claims avoided.
+Data compliance and ethics,Implemented/documented,"Privacy, provenance, fairness, transparency and safe-use limitations recorded."
+Overfitting diagnostic,Implemented,Train-vs-test generalization gaps reported.
+Underfitting diagnostic,Implemented,Train performance and CV/test performance reviewed for weak-fit signals.
+Bias-variance trade-off,Implemented/documented,Model complexity and generalization are discussed using CV and train/test diagnostics.
+Unsupervised learning,Not applicable,The project target is explicitly labelled binary classification.
+Regression metrics,Not applicable,Primary task is classification; regression would not answer the project question.

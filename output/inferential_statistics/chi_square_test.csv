@@ -1,0 +1,2 @@
+test,variables,chi_square,degrees_of_freedom,p_value,alpha,decision,null_hypothesis,alternative_hypothesis,min_expected_frequency,assumptions_satisfied,conclusion
+Chi-square test of independence,Selected keyword presence × prompt class,250.24085228545337,1,2.301080484057235e-56,0.05,Reject H0,Keyword presence and prompt class are independent.,Keyword presence and prompt class are associated.,177.3278370514064,True,There is evidence of association between keyword presence and class if H0 is rejected.

@@ -1,0 +1,2 @@
+norm,mean_row_norm,median_row_norm,min_row_norm,max_row_norm,target_value_encoding
+L2,0.997090203685742,1.0,0.0,1.0000000000000013,"benign=0, jailbreak=1 (analysis only)"

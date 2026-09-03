@@ -1,0 +1,17 @@
+bias_type,status,evidence,project_action
+Sampling bias,Risk identified,"Dataset is a curated benchmark of 1,306 prompts rather than a documented random sample of real-world traffic.",State limited population generalization; recommend external/temporal validation.
+Selection bias,Risk identified,Train/test files are a supplied benchmark split with a near 50/50 class balance.,Preserve official split for comparability and explicitly report that deployment prevalence may differ.
+Measurement bias,Not directly testable,The project has prompt text and labels but no independent measurement instrument or annotation metadata.,Do not claim measurement bias is absent; document provenance/annotation limitations.
+Labeling bias,Risk cannot be quantified,"No annotator identities, agreement scores, or labeling protocol are supplied with the modeling files.",Treat labels as benchmark labels and flag lack of annotation-agreement evidence as a limitation.
+Historical bias,Risk identified,The benchmark reflects a particular collection period and known jailbreak styles; it may not represent current attacks.,Recommend temporal validation and newer attack data.
+Exclusion bias,Risk identified,"The two available fields are prompt text and binary class; no demographic, language, platform, or attack-family metadata are available.",Do not infer subgroup fairness; expand metadata/data coverage before subgroup claims.
+Evaluation bias,Mitigated in protocol; residual risk remains,"A fixed official test split is used once, while model-selection CV is confined to training data. The benchmark may still differ from deployment traffic.",Report test results separately and add temporal/external validation in future work.
+Algorithmic/model bias,Risk assessed,TF-IDF relies on surface lexical patterns and may miss semantically obfuscated attacks.,Use error analysis and compare with semantic/embedding models in future work.
+Confirmation bias,Mitigated by comparison,Three classifiers are evaluated with the same held-out test protocol and multiple metrics rather than selecting on a single preferred score.,Keep metric-selection rationale explicit in the report.
+Observer bias,Not directly testable,No data-collection observer metadata are supplied.,Document this evidence gap rather than asserting absence.
+Lexical confounding: dan,Observed,"Keyword/phrase presence rate: jailbreak=0.342, benign=0.058.","Interpret lexical features as predictive signals, not causal evidence of jailbreak intent."
+Lexical confounding: ignore,Observed,"Keyword/phrase presence rate: jailbreak=0.179, benign=0.004.","Interpret lexical features as predictive signals, not causal evidence of jailbreak intent."
+Lexical confounding: previous_instructions,Observed,"Keyword/phrase presence rate: jailbreak=0.029, benign=0.000.","Interpret lexical features as predictive signals, not causal evidence of jailbreak intent."
+Lexical confounding: no_restrictions,Observed,"Keyword/phrase presence rate: jailbreak=0.050, benign=0.000.","Interpret lexical features as predictive signals, not causal evidence of jailbreak intent."
+Lexical confounding: roleplay,Observed,"Keyword/phrase presence rate: jailbreak=0.066, benign=0.056.","Interpret lexical features as predictive signals, not causal evidence of jailbreak intent."
+Lexical confounding: unfiltered,Observed,"Keyword/phrase presence rate: jailbreak=0.173, benign=0.000.","Interpret lexical features as predictive signals, not causal evidence of jailbreak intent."

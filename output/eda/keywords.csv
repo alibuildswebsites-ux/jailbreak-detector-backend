@@ -1,0 +1,13 @@
+keyword,class,count,rate
+dan,benign,30,0.05813953488372093
+dan,jailbreak,176,0.341747572815534
+ignore,benign,2,0.003875968992248062
+ignore,jailbreak,92,0.1786407766990291
+previous instructions,benign,0,0.0
+previous instructions,jailbreak,15,0.02912621359223301
+no restrictions,benign,0,0.0
+no restrictions,jailbreak,26,0.05048543689320388
+roleplay,benign,29,0.0562015503875969
+roleplay,jailbreak,31,0.06019417475728155
+unfiltered,benign,0,0.0
+unfiltered,jailbreak,89,0.17281553398058253

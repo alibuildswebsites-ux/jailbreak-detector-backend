@@ -1,0 +1,7 @@
+group,feature,estimated_kde_peaks,interpretation
+overall,word_count,1,approximately unimodal
+benign,word_count,2,approximately bimodal
+jailbreak,word_count,1,approximately unimodal
+overall,char_count,1,approximately unimodal
+benign,char_count,1,approximately unimodal
+jailbreak,char_count,1,approximately unimodal

@@ -1,0 +1,5 @@
+word_count,benign,jailbreak,All
+Short (≤50),329,37,366
+Medium (51–250),141,214,355
+Long (>250),46,264,310
+All,516,515,1031

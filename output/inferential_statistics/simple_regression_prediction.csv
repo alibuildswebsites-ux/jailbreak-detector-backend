@@ -1,0 +1,2 @@
+prediction_target,predictor,word_count_input,predicted_character_count,equation
+character_count,word_count,108.0,648.7164101291431,char_count = 28.0207 + 5.7472 × word_count

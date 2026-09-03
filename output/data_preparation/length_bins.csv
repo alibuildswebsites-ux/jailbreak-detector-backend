@@ -1,0 +1,7 @@
+type,length_bin,count
+benign,short,329
+benign,medium,141
+benign,long,46
+jailbreak,short,37
+jailbreak,medium,214
+jailbreak,long,264

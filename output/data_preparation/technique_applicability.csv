@@ -1,0 +1,32 @@
+technique,status,project_decision
+Data integration,Applied,Train/test schemas audited; official split kept separate to prevent leakage.
+Data aggregation,Not applied,There is no repeated transactional/time-series grain requiring grouped aggregation; prompts remain independent observations.
+Sampling,Not applied,Dataset is small enough to process in memory; sampling would discard training examples.
+Compression/indexing/chunking,Not applied,"Not needed for a 1,306-row text dataset."
+Missing-value imputation/interpolation,Not applied,No missing prompt/label values exist.
+Duplicate removal,Applied,Exact duplicates removed before modeling; normalized duplicates also checked.
+Data types/format standardization,Applied,CSV schema validated; prompts normalized to lowercase and collapsed whitespace.
+Outlier detection,Applied,IQR and |Z|>3 analyses performed on word/character length; observations retained.
+Data smoothing,Not applied,Moving averages are inappropriate for independent text prompts.
+SMOTE,Not applied,Training classes are balanced (516 benign / 515 jailbreak).
+Feature scaling,Applied implicitly,TF-IDF provides a normalized sparse feature representation; conventional scalar scaling is not required for the primary text pipeline.
+Normalization,Applied,TF-IDF uses L2 normalization; no Min-Max transform was forced onto sparse text features.
+Standardization,Not applied,No dense continuous feature block is required by the primary TF-IDF pipeline.
+Log transformation,Evaluated,log1p length transformation compared against original skewness/kurtosis; not inserted into the primary text model.
+Categorical encoding,Applied implicitly,Binary target classes are handled by scikit-learn; explicit manual encoding is unnecessary.
+Binning,Applied for analysis,Word count categorized as short/medium/long.
+Binarization,Applied for analysis,Six jailbreak-keyword flags and any-keyword indicator created.
+Feature creation,Applied,"Length, punctuation, case, digit, newline, keyword and related text features created."
+Feature selection,Applied for analysis,"Chi-square SelectKBest reduced 5,000 TF-IDF features to 1,000 for a documented experiment."
+Feature extraction,Applied,TF-IDF unigram+bigram representation.
+PCA,Not applied,Sparse TF-IDF is better preserved by sparse-aware text methods; PCA is unnecessary for the primary classifier.
+Tokenization,Applied,Explicit tokenization audit plus TF-IDF tokenization.
+Stopword removal,Applied,English stopwords removed inside TF-IDF.
+Lowercasing,Applied,All modeling text lowercased during cleaning.
+Punctuation/special characters,Preserved intentionally,Not aggressively stripped because prompt structure can be discriminative.
+Stemming,Not applied,Could collapse meaningful adversarial lexical forms; not required for the baseline.
+Lemmatization,Not applied,Not required for the baseline; exact lexical forms can carry signal.
+POS tagging,Not applied,Not required for the binary intent-classification objective.
+Spell correction,Not applied,Could alter adversarial/obfuscated wording and is not necessary for the baseline.
+Named entity recognition,Not applied,Entity identity is not the classification target.
+Sentiment analysis,Not applied,Sentiment is not the target and is not necessary for jailbreak detection.

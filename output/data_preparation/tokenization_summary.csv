@@ -1,0 +1,3 @@
+split,documents,total_tokens,mean_tokens,median_tokens,unique_tokens
+train,1031,211971,205.59747817652763,109.0,12569
+test,262,61093,233.1793893129771,119.0,5882

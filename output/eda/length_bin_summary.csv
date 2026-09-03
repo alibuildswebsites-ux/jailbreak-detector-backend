@@ -1,0 +1,7 @@
+length_bin,type,count,proportion_within_class
+Short (≤50),benign,329,0.6375968992248062
+Short (≤50),jailbreak,37,0.07184466019417475
+Medium (51–250),benign,141,0.27325581395348836
+Medium (51–250),jailbreak,214,0.4155339805825243
+Long (>250),benign,46,0.08914728682170543
+Long (>250),jailbreak,264,0.512621359223301

@@ -1,0 +1,7 @@
+diagnostic,variable,group,statistic,p_value,alpha,interpretation
+Shapiro-Wilk normality,word_count,Benign,0.5032881144238307,1.4820247106910361e-35,0.05,Reject normality
+Shapiro-Wilk normality,word_count,Jailbreak,0.8608552221105142,5.726034608542872e-21,0.05,Reject normality
+Shapiro-Wilk normality,punctuation_ratio,Short (≤50),0.6896646887868277,2.0645143068195146e-25,0.05,Reject normality
+Shapiro-Wilk normality,punctuation_ratio,Medium (51–250),0.38725416301685284,7.361975103244296e-33,0.05,Reject normality
+Shapiro-Wilk normality,punctuation_ratio,Long (>250),0.38965744082884946,5.690582404765085e-31,0.05,Reject normality
+Levene variance-homogeneity test,punctuation_ratio,Short/Medium/Long,3.8217419399224335,0.02220130771919433,0.05,Reject equal-variance assumption

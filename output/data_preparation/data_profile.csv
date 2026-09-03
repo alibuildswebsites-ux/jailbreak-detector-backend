@@ -1,0 +1,9 @@
+split,column,dtype,rows,missing,unique,duplicate_rows,mean,median,std,min,max,skewness,kurtosis
+train_raw,prompt,str,1044,0,1033,11,,,,,,,
+train_raw,type,str,1044,0,2,11,,,,,,,
+test_raw,prompt,str,262,0,262,0,,,,,,,
+test_raw,type,str,262,0,2,0,,,,,,,
+train_clean,prompt,str,1031,0,1031,0,,,,,,,
+train_clean,type,str,1031,0,2,0,,,,,,,
+test_clean,prompt,str,262,0,262,0,,,,,,,
+test_clean,type,str,262,0,2,0,,,,,,,

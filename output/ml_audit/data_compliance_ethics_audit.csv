@@ -1,0 +1,6 @@
+topic,status,finding,report_requirement
+Privacy / personal data,Limited evidence,Dataset fields are prompt text and class only; no dedicated personal-data fields are present in the project schema.,Avoid claiming that arbitrary prompt text can never contain personal data.
+Permission / provenance,Documented at project level,Project documentation records the benchmark source and Apache 2.0 license.,Retain source attribution and license information in the final report.
+Fairness / representativeness,Limitation,No demographic or deployment-population metadata are available for subgroup fairness testing.,Do not report demographic fairness conclusions unsupported by the dataset.
+Transparency,Implemented,"Models, metrics, confusion matrices, errors, and feature coefficients are exported.",Include methodology and limitations alongside scores.
+Security / safe use,Implemented as project framing,"Detector is treated as a first-line classifier, not a guarantee of safety.",State that false negatives remain possible and model performance can drift.

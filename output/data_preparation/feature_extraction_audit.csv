@@ -1,0 +1,2 @@
+tfidf_features_before_selection,features_after_chi2_selection,tfidf_norm,stop_words,ngram_range
+5000,1000,l2,english,"(1,2)"

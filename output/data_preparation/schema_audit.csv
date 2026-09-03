@@ -1,0 +1,3 @@
+column,train_present,test_present,train_dtype,test_dtype
+prompt,True,True,str,str
+type,True,True,str,str

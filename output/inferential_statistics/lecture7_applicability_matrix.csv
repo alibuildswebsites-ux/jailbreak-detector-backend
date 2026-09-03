@@ -1,0 +1,26 @@
+lecture_topic,status,artifact,note
+Point estimation,Implemented,confidence_intervals.csv,Sample statistics estimate population parameters.
+Z confidence interval,Demonstrated with limitation,z_interval_formula_demonstration.csv,Lecture known-sigma formula shown with sample SD as a plug-in; t CI is primary because population SD is unknown.
+T confidence interval,Implemented,confidence_intervals.csv,Primary CI method for unknown population SD.
+90/95/99% CI comparison,Implemented,confidence_interval_comparison.csv,Higher confidence produces wider intervals.
+Proportion confidence interval,Implemented,proportion_confidence_interval.csv,Normal approximation used; sample is large and expected counts are adequate.
+Sample-size determination,Implemented,sample_size_determination.csv,Mean and proportion planning calculations.
+Bootstrapping,Implemented,bootstrap_confidence_intervals.csv,"5,000 percentile bootstrap resamples with replacement."
+Hypothesis testing,Implemented,hypothesis_tests.csv,"H0/H1, alpha, statistic, p-value, decision and conclusion recorded."
+Type I / Type II errors,Documented,summary.md,Statistical errors distinguished from classifier false positives/negatives.
+Assumption diagnostics,Implemented,assumption_diagnostics.csv,Shapiro-Wilk normality and Levene variance-homogeneity diagnostics.
+Independent t-test,Implemented,hypothesis_tests.csv,"Welch test, two-tailed and one-tailed."
+Mann–Whitney U,Implemented,hypothesis_tests.csv,Two-tailed and one-tailed.
+Paired t-test,Not applicable,hypothesis_tests.csv,No paired observations.
+Wilcoxon signed-rank,Not applicable,hypothesis_tests.csv,No paired observations.
+One-way ANOVA,Implemented,hypothesis_tests.csv,Punctuation ratio compared across three word-length groups.
+Kruskal–Wallis,Implemented,hypothesis_tests.csv,Non-parametric counterpart to the ANOVA question.
+Multiple correlation,Implemented,multiple_correlation.csv,Multiple R reported from the multiple-regression R².
+Pearson correlation,Implemented,correlation_significance_tests.csv,Coefficient and significance test.
+Spearman correlation,Implemented,correlation_significance_tests.csv,Rank-based correlation for non-normal prompt lengths.
+Chi-square independence,Implemented,chi_square_test.csv,"Keyword presence versus prompt class, with observed/expected tables."
+Simple linear regression,Implemented,simple_regression_summary.csv,Least-squares character-count prediction from word count.
+Regression best-fit line,Implemented,simple_regression_best_fit.png,Scatterplot with fitted line.
+Regression residuals,Implemented,simple_regression_residuals.png,Residual diagnostic plot.
+Regression prediction,Implemented,simple_regression_prediction.csv,Prediction at the sample median word count.
+Multiple linear regression,Implemented,multiple_regression_summary.csv,OLS with five text-derived predictors.
